@@ -12,8 +12,9 @@ body {
   /* Topografy */
   h1{
     font-size: 3.5rem;
-    margin: 10px;
+    margin: 0px;
     padding: 0 10px;
+    color: white;
  }
  
  
@@ -22,8 +23,8 @@ body {
 
 nav {
     height: 8vh;
-    width: 100%;
-    background-color: #0d220f;
+    width: 100vw;
+    background-color: #2128229f;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -135,4 +136,49 @@ nav a {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -5px);
+}
+/* Splash */ 
+
+.splash{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/josh-olalde-X1P1_EDNnok-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+    
+}
+.tittle-text{
+    margin: -8rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    width: 100vw;
+    height: 100vh;
+    background-color: #40404098;
+}
+
+.services{
+    background-image: url('../images/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+footer{
+    height: 12vh;
+    background-color: #40404098;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer p{
+    margin: 0;
 }
