@@ -1,48 +1,76 @@
-/* Global */
+/*====================
+   Global
+  ==================== */
+*{
+    margin: 0;
+    padding: 0;
 
+}
 html{
     scroll-behavior: smooth;
 }
 body {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
   }
  
-  /* Topografy */
-  h1{
-    font-size: 3.5rem;
-    margin: 0px;
-    padding: 0 10px;
-    color: white;
- }
- 
- 
+  /*===================
+   Topografy
+    =================== */
+    .tittle-text h1{
+        font-size: 3.5rem;
+        margin: 0px;
+        color: white;
+        text-align: left;
+     }
+     .tittle-text h2{
+        padding: 10px 0;
+        color: white;
+     }
+     .about h2, p{
+        margin: 10px;
+        color: rgb(216, 216, 216);
+     }
+     .about p{
+        font-size: 1rem;
+        line-height: 26px;
+        letter-spacing: 1px;
+     }
+     span{
+        font-size: 1.1rem;
+        color: orangered;
+     }
   
-  /* Navbar */
+  /*===================
+    Navbar
+    =================== */
 
 nav {
     height: 8vh;
-    width: 100vw;
-    background-color: #2128229f;
+    width: 100%;
+    background-color: #575250a7;;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 9999;
-    box-shadow: 3px 5px 10px rgb(94, 90, 90);
+    box-shadow: 1px 3px 7px rgb(100, 100, 100);
 }
 
 .logo {
-    height: 60px;
-   
+    height: 3.5rem;
+    font-size: 1.6rem;
+}
+.tel{
+    height: 15px;
+    padding-right: 5px;
 }
 
 
 .nav-links {
     display: flex;
-    width: 30%;
+    width: 33%;
     justify-content: space-around;
     align-items: center;
     list-style: none;
@@ -54,7 +82,9 @@ nav ul li {
     margin: 0 3px;
     padding: 10px 5px;
     transition: 0.5s;
-    border-radius: 5px;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
 }
 
 nav a {
@@ -93,8 +123,8 @@ nav a {
         position: absolute;
         right: 0px;
         height: 80vh;
-        top: 6vh;
-        background-color: #0d220f;
+        top: 7vh;
+        background-color: #2128229f;
         display: flex;
         flex-direction: column;
         width: 45%;
@@ -137,40 +167,136 @@ nav a {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -5px);
 }
-/* Splash */ 
+/*===================
+  Splash
+  =================== */ 
 
 .splash{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    background-color: #6b6b6b;
     background-image: url('../images/josh-olalde-X1P1_EDNnok-unsplash.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-   
-    
+    background-blend-mode: multiply; 
 }
 .tittle-text{
-    margin: -8rem;
+    margin: 0 auto;
+    padding: 0 30px;
     height: 100vh;
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+}
+/*===================
+   Section about
+  =================== */ 
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: #575250;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-
-.about{
-    width: 100vw;
+.container{
+    max-width: 1200px;
     height: 100vh;
-    background-color: #40404098;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
+.about-txt{
+    max-width: 40%;
+}
+.carousel {
+    margin-top: 100px;
+    max-width: 600px;
+    margin: 0 10px;
+    position: relative;
+  }
+  .carousel-item,
+  .carousel-item-hidden {
+    display: none;
+   
+  }
+  .carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+  }
+  .carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 2s;
+  }
+  .carousel-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .carousel button {
+    display: none;
+  }
+  #carousel-button-prev{
+      margin-left: 20px;
+  }
+  #carousel-button-next{
+      margin-right: 20px;
+  }
+  .carousel-text{
+      width: 100%;
+    display: flex;
+    position: absolute;
+    border: none;
+    top: 50%;
+    left:5%;
+    transform: translateY(50%);
+    color: whitesmoke;
+    text-shadow: 0px 0px 7px black;
+  }
+  @keyframes fadeVisibility {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  @media  screen and (max-width: 769px){
+    .container{
+        flex-direction: column;
+    }
+    .about-txt{
+        max-width: 75%;
+    }
+    .about p{
+        font-size: 0.8rem;
+        line-height: 23px;
+        letter-spacing: 1px;
+     }
+  }
+/*===================
+   Section services
+  =================== */
 .services{
+    background-color: #6b6b6b;
+    background-blend-mode: multiply;
     background-image: url('../images/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
+    min-height: 50vh;
 }
+/*===================
+   Section footer
+  =================== */
 footer{
     height: 12vh;
     background-color: #40404098;

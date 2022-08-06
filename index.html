@@ -4,20 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>VVS Expressen Region Syd AB</title>
   </head>
   <body>
     <nav>
       <div class="logo">
-        <a href="#">VVS Expressen Region Syd AB</a>
+        <a href="#"
+          >VVS Expressen<br />
+          Region Syd AB</a
+        >
       </div>
       <ul class="nav-links">
         <li><a href="#">HEM</a></li>
         <li><a href="#about">OM OSS</a></li>
         <li><a href="#services">TJÄNSTER</a></li>
         <li><a href="#contact">KONTAKT</a></li>
-        <li>+46 760093224</li>
+        <li>
+          <img src="images/phone24w.png" alt="Telefon lur" class="tel" /><a
+            >+46 760093224</a
+          >
+        </li>
       </ul>
       <div class="hamburger">
         <div class="line1"></div>
@@ -27,25 +40,74 @@
     </nav>
     <main class="splash">
       <div class="tittle-text">
-        <h1>Välkommen till</h1>
-        <h1>VVS Expressen Region Syd AB</h1>
-        <h2>Din lokala vvsentreprenören</h2>
+        <h1>Välkommen till<br />VVSExpressen Region Syd AB</h1>
+        <h2>Din lokala vvsentreprenör</h2>
       </div>
     </main>
     <section class="about">
-        <div class="about-text">
-            <h1>Det är vi</h1>
-            <img src="" alt="">
+      <div class="container">
+        <div class="carousel">
+          <div class="carousel-item carousel-item-visible">
+            <img
+              src="images/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg"
+              alt=""
+            />
+            <div class="carousel-text">
+              <h1>VVS Tjänster</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/josh-olalde-X1P1_EDNnok-unsplash.jpg" alt="" />
+            <div class="carousel-text">
+              <h1>Våtrum</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg"
+              alt=""
+            />
+            <div class="carousel-text">
+              <h1>Byggtjänster</h1>
+            </div>
+          </div>
+          <div class="carousel-actions">
+            <button id="carousel-button-prev" aria-label="Previous slide">
+              <
+            </button>
+            <button id="carousel-button-next" aria-label="Next slide">></button>
+          </div>
         </div>
+        <div class="about-txt">
+          <h2>Om oss</h2>
+          <p>
+            <span>VVSExpressen Region Syd AB</span> besitter mångårig erfarenhet inom
+            samtliga tjänsteområden vi erbjuder våra kunder. Sedan starten 2006
+            har vi växt till fyra skickliga medarbetare som brinner för att
+            leverera hög service och kvalité inom samtliga projekt vi tar oss
+            an.
+          </p>
+          <p>
+            Tillsammans med kunden tar vi fram realistiska deadlines som
+            tillåter oss att leverera utan att kompromissa på slutresultatet. Vi
+            besitter ett brett nätverk av lokala företag och leverantörer och
+            kan därmed erbjuda totalentreprenad på alla våra tjänster.
+          </p>
+          <p>
+            Behöver du rådgivning eller har frågor kring ditt nästa projekt? Då
+            är du mer än välkommen att ringa oss för konsultation.
+          </p>
+        </div>
+      </div>
     </section>
     <section class="services">
-        <div class="about-text">
-            <h1>Det är vi</h1>
-            <img src="" alt="">
-        </div>
+      <div class="about-text">
+        <h1>Det är vi</h1>
+        <img src="" alt="" />
+      </div>
     </section>
     <footer>
-        <p>&copy; 2022 VVS Expressen Region Syd AB</p>
+      <p>&copy; 2022 VVS Expressen Region Syd AB</p>
     </footer>
 
     <script src="js/script.js"></script>
