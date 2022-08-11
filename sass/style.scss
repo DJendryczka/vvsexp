@@ -117,7 +117,11 @@ nav a {
     letter-spacing: 1.3px;
 }
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 14rem;
+   
 }
 .logo img{
     width: 100%;
@@ -219,16 +223,7 @@ nav a {
     background-attachment: fixed;
     background-blend-mode: multiply; 
 }
-.projects{
-    width: 100%;
-    height: 100vh;
-    background-color: #6b6b6b;
-    background-image: url('../images/IMG-07363.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: multiply; 
-}
+
 .tittle-text{
     margin: 0 auto;
     padding: 0 30px;
@@ -417,7 +412,7 @@ nav a {
     
 }
 .contact-text{
-    width: 45%;
+    width: 20%;
     font-size: 1.5rem;
     margin: 2rem 1rem;
 }
@@ -481,6 +476,48 @@ textarea{
     font-size: .9rem;
    }
 }
+/*===================
+   Section Projects
+  =================== */
+  .projects{
+    width: 100%;
+    height: auto;
+    background-color: #6b6b6b;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+   .img-container{
+    min-width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+  .projects h1{
+    padding: 6rem 0 2rem;
+    color: #fff;
+    font-size: 3rem;
+  }
+  .img-card{
+    width: 22%;
+    padding-bottom: 1.5rem;
+  }
+  .img-card img{
+    width: 100%;
+    border-radius: 5px;
+  }
+  @media  screen and (max-width: 769px){
+    .img-container{
+        width: 95%;
+        flex-direction: column;
+    }
+    .img-card{
+        width: 80%;
+    }
+  }
 
 /*===================
    Section footer
@@ -505,8 +542,7 @@ footer i {
     height: 30px;
     width: 30px;
     padding: 5px;
-    background: rgb(255, 113, 85);
-    border: 1px solid red;
+    background: rgb(88, 85, 255);
     border-radius: 10px;
     font-size: 30px;
     color: #fff;
