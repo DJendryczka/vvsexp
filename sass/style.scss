@@ -464,9 +464,11 @@ textarea{
     .contact h4{
         font-size: 1rem;
     }
+    form{
+        width: 100%;
+    }
     input,
     textarea{
-    width: 300px;
     border: 1px solid rgb(204, 197, 197);
     box-shadow: none;
     padding: 6px 10px;
@@ -481,7 +483,8 @@ textarea{
     min-width: 96%;
     flex-direction: column;
    }
-   .contact-text{
+   .contact-text,
+   .contact-form{
     min-width: 90%;
     height: auto;
     font-size: .9rem;
