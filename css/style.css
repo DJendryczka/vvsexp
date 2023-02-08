@@ -19,7 +19,7 @@ body {
    Topografy
     =================== */
 .tittle-text h1 {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   margin: 0px;
   color: #c8c8c8;
   text-align: left;
@@ -48,7 +48,7 @@ body {
 }
 
 .color-text {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #236be6;
 }
 
@@ -388,19 +388,15 @@ nav a {
 }
 
 .box {
-  width: 30%;
+  width: 33%;
+  height: 680px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
-  text-align: center;
-  
-  
+  text-align: left;
+  margin: 1rem;
 }
 
-.service-txt {
-  padding: 0 20px;
-}
 
 .box img {
   width: 95%;
@@ -410,7 +406,7 @@ nav a {
 }
 
 .box img:hover {
-  transform: scale(1.4);
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 769px) {
@@ -422,8 +418,7 @@ nav a {
     background-attachment: scroll;
   }
   .box {
-    width: 80%;
-    margin: 1.5rem 0;
+    width: 85%;
   }
   .about-txt {
     font-size: 1rem;
@@ -574,7 +569,7 @@ textarea {
 }
 
 .img-card {
-  width: 22%;
+  width: 25%;
   padding-bottom: 1.5rem;
 }
 
@@ -589,7 +584,7 @@ textarea {
     flex-direction: column;
   }
   .img-card {
-    width: 80%;
+    width: 85%;
   }
 }
 
