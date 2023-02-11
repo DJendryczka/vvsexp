@@ -12,7 +12,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /*===================
@@ -30,7 +30,8 @@ body {
   color: #c8c8c8;
 }
 
-.about h2, p {
+.about h2,
+p {
   margin: 10px;
   color: #c8c8c8;
 }
@@ -262,16 +263,17 @@ nav a {
   max-width: 1200px;
   min-height: 100vh;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .about-txt {
-  max-width: 40%;
+  max-width: 70%;
 }
 
 .carousel {
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 10px;
   position: relative;
 }
@@ -280,18 +282,27 @@ nav a {
 .carousel-item-hidden {
   display: none;
 }
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  height: 400px;
+  overflow: hidden;
+  margin: 4rem 0;
+  
+}
 
-.carousel .carousel-item img {
+.carousel-item img {
   width: 100%;
-  max-width: 600px;
+  box-shadow: 3px 4px 6px rgb(44, 43, 43);
 }
 
 .carousel-item-visible {
   display: block;
   -webkit-animation: fadeVisibility 2s;
-          animation: fadeVisibility 2s;
+  animation: fadeVisibility 2s;
 }
-
 .carousel-actions {
   width: 100%;
   display: flex;
@@ -302,8 +313,15 @@ nav a {
   transform: translateY(-50%);
 }
 
-.carousel button {
-  display: none;
+.carousel-actions button {
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 #carousel-button-prev {
@@ -315,14 +333,15 @@ nav a {
 }
 
 .carousel-text {
-  width: 100%;
+  max-width: 1200px;
   display: flex;
+  flex-direction: column;
   position: absolute;
   border: none;
-  top: 50%;
-  left: 5%;
+  top: 29%;
+  left: 6%;
   transform: translateY(50%);
-  color: whitesmoke;
+  color: white;
   text-shadow: 0px 0px 7px black;
 }
 
@@ -366,9 +385,9 @@ nav a {
    Section services
   =================== */
 .services {
-  background-color: #474545;
+  background-color: #5c5a5a;
   background-blend-mode: multiply;
-  background-image: url("../images/IMG-1019.jpg");
+  background-image: url("../images/img-wilhelmj-70-bathroom-2-9416-HDR.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -397,7 +416,6 @@ nav a {
   margin: 1rem;
 }
 
-
 .box img {
   width: 95%;
   padding: 10px;
@@ -414,7 +432,7 @@ nav a {
     flex-direction: column;
   }
   .splash,
-  .services{
+  .services {
     background-attachment: scroll;
   }
   .box {
@@ -424,7 +442,7 @@ nav a {
     font-size: 1rem;
   }
   .box img:hover {
-    transform: scale(0);
+    transform: scale(1.1);
   }
 }
 
@@ -532,7 +550,7 @@ textarea {
   .contact-form {
     min-width: 90%;
     height: auto;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .contact-map {
     min-width: 90%;
@@ -570,7 +588,10 @@ textarea {
 
 .img-card {
   width: 25%;
-  padding-bottom: 1.5rem;
+  max-height: 400px;
+  overflow: hidden;
+  box-shadow: 3px 4px 6px rgb(44, 43, 43);
+  margin: 2rem 0;
 }
 
 .img-card img {
@@ -631,7 +652,6 @@ footer p {
 }
 
 .cert-container {
- 
   padding: 1.2rem 2rem;
 }
 
