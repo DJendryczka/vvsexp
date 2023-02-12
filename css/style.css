@@ -21,8 +21,9 @@ body {
 .tittle-text h1 {
   font-size: 2.8rem;
   margin: 0px;
-  color: #c8c8c8;
+  color: #e4e2e2;
   text-align: left;
+  text-shadow: 0px 0px 10px black;
 }
 
 .tittle-text h2 {
@@ -33,7 +34,7 @@ body {
 .about h2,
 p {
   margin: 10px;
-  color: #c8c8c8;
+  color: #e8e8e8;
 }
 
 .box h2 {
@@ -50,7 +51,7 @@ p {
 
 .color-text {
   font-size: 3rem;
-  color: #236be6;
+  color: #2c6bd7;
 }
 
 @media screen and (max-width: 769px) {
@@ -228,7 +229,7 @@ nav a {
 .splash {
   width: 100%;
   height: 100vh;
-  background-color: #5b5b5b;
+  background-color: #8d8d8d;
   background-image: url("../images/img-wilhelmj-33-master-bathroom-2168-HDR-2.jpg");
   background-position: center, center;
   background-size: cover;
@@ -385,7 +386,7 @@ nav a {
    Section services
   =================== */
 .services {
-  background-color: #5c5a5a;
+  background-color: #8d8d8d;
   background-blend-mode: multiply;
   background-image: url("../images/img-wilhelmj-70-bathroom-2-9416-HDR.jpg");
   background-position: center;
@@ -409,6 +410,7 @@ nav a {
 .box {
   width: 33%;
   height: 680px;
+  background-color: #29282828;
   display: flex;
   flex-direction: column;
   align-items: center;
