@@ -425,9 +425,7 @@ nav a {
   transition: all 1s;
 }
 
-.box img:hover {
-  transform: scale(1.1);
-}
+
 
 @media screen and (max-width: 769px) {
   .container-service {
@@ -589,10 +587,16 @@ textarea {
 }
 
 .img-card {
-  width: 25%;
-  max-height: 400px;
+  width: 30%;
   overflow: hidden;
   box-shadow: 3px 4px 6px rgb(44, 43, 43);
+  margin: 2rem 0;
+}
+.img-card-link{
+  width: 20%;
+  overflow: hidden;
+  transition: all 0.5s;
+  box-shadow: 6px 8px 12px rgb(44, 43, 43);
   margin: 2rem 0;
 }
 
@@ -600,14 +604,28 @@ textarea {
   width: 100%;
   border-radius: 5px;
 }
+.img-card-link img{
+  width: 100%;
+  border-radius: 5px;
+}
+.img-card-link h2{
+  padding: 1rem 0;
+}
+.img-card-link:hover{
+  box-shadow: 3px 4px 6px rgb(51, 50, 50);
+  background-color: #757575;
+}
 
 @media screen and (max-width: 769px) {
   .img-container {
     width: 95%;
     flex-direction: column;
   }
-  .img-card {
+  .img-card-link {
     width: 85%;
+  }
+  .img-card{
+    width: 90%;
   }
 }
 
