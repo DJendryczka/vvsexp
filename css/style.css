@@ -34,7 +34,7 @@ body {
 .about h2,
 p {
   margin: 10px;
-  color: #e8e8e8;
+  color: #4e4d4d;
 }
 
 .box h2, h2 {
@@ -255,6 +255,7 @@ nav a {
   width: 100%;
   height: auto;
   background-color: #575250;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,7 +430,9 @@ nav a {
   border-radius: 16px;
   transition: all 1s;
 }
-
+.service-txt{
+  color:#dbdbe0
+}
 
 
 @media screen and (max-width: 769px) {
@@ -460,8 +463,8 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #0da9d4;
-  background-image: linear-gradient(to right, rgb(84, 205, 199) , #0880a1);
+  background-color: #95918cd5;
+  /* background-image: linear-gradient(to right, rgb(84, 205, 199) , #0880a1); */
 }
 
 .contact-info {
@@ -565,8 +568,7 @@ textarea {
   =================== */
 .projects {
   width: 100%;
-  height: auto;
-  background-color: #6b6b6b;
+  background-color: #fff;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -576,7 +578,6 @@ textarea {
 .img-container {
   width: 80%;
   min-width: 60%;
-  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -592,6 +593,7 @@ textarea {
 
 .img-card-link{
   width: 25%;
+  height: 30rem;
   overflow: hidden;
   transition: all 0.5s;
   box-shadow: 6px 8px 12px rgb(44, 43, 43);
