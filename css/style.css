@@ -34,7 +34,7 @@ body {
 .about h2,
 p {
   margin: 10px;
-  color: #e8e8e8;
+  color: #4e4d4d;
 }
 
 .box h2, h2 {
@@ -77,28 +77,55 @@ p {
     Navbar
     =================== */
 nav {
-  height: 6.7vh;
+  height: 60px;
   width: 100%;
   background-color: #95918cd5;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  z-index: 9999;
+  /* position: fixed;
+  top: 80;
+  z-index: 9999; */
   box-shadow: 1px 3px 7px #787575;
+}
+.icons{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+.header{
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cert-container{
+  display: flex;
+}
+.cert-card{
+  width: 4rem;
+  height: 4rem;
+  padding: 0 1rem;
+}
+.cert-card img{
+  width: 100%;
 }
 
 .nav-links {
   display: flex;
-  width: 33%;
+  width: 32%;
   justify-content: space-around;
   align-items: center;
   list-style: none;
 }
 
 nav ul li {
-  min-width: 90px;
+  min-width: 96px;
   text-align: center;
   margin: 0 3px;
   padding: 10px 0;
@@ -148,23 +175,35 @@ nav a {
   background-color: antiquewhite;
   transition: all 0.3s ease;
 }
-
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1100px){
+  .icons{
+    display: none;
+  }
+  .cert-card{
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media screen and (max-width: 869px) {
   .hamburger {
     display: block;
+    margin-right: 1rem;
   }
   body {
     overflow-x: hidden;
   }
   nav {
-    position: fixed;
     background-color: #575250;
+    justify-content: flex-end;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
   .nav-links {
     position: absolute;
     right: 0px;
     height: 80vh;
-    top: 7vh;
+    top: 10vh;
     background-color: #2128229f;
     display: flex;
     flex-direction: column;
@@ -172,17 +211,17 @@ nav a {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     opacity: 0.9;
+    z-index: 9999;
   }
   .nav-links li {
     opacity: 0;
   }
   .logo {
+    margin-left: 1rem;
     width: 120px;
     height: 50px;
   }
-  .logo a {
-    font-size: 0.8rem;
-  }
+  
 }
 
 .nav-active {
@@ -255,6 +294,7 @@ nav a {
   width: 100%;
   height: auto;
   background-color: #575250;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,7 +469,9 @@ nav a {
   border-radius: 16px;
   transition: all 1s;
 }
-
+.service-txt{
+  color:#dbdbe0
+}
 
 
 @media screen and (max-width: 769px) {
@@ -460,7 +502,8 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #0da9d4;
+  background-color: #95918cd5;
+  /* background-image: linear-gradient(to right, rgb(84, 205, 199) , #0880a1); */
 }
 
 .contact-info {
@@ -564,8 +607,7 @@ textarea {
   =================== */
 .projects {
   width: 100%;
-  height: auto;
-  background-color: #6b6b6b;
+  background-color: #fff;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -573,19 +615,21 @@ textarea {
 }
 
 .img-container {
-  width: 80%;
-  min-width: 60%;
-  height: auto;
+  max-width: 1240px;
+
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
 }
 
 .projects h1 {
-  padding: 6rem 0 2rem;
-  color: #fff;
+  padding: 5rem 0;
+  color: #5c5757;
   font-size: 3rem;
+}
+.projects h2{
+  margin-top: 2rem;
+  color: #575250;
 }
 
 .img-card {
@@ -595,11 +639,19 @@ textarea {
   margin: 2rem 0;
 }
 .img-card-link{
-  width: 25%;
-  overflow: hidden;
-  transition: all 0.5s;
-  box-shadow: 6px 8px 12px rgb(44, 43, 43);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
   margin: 2rem 0;
+  transition: all 0.3s;
+  border-radius: 1rem;
+  box-shadow: 6px 8px 12px rgb(44, 43, 43);
+}
+.image-card-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .img-card img {
@@ -608,14 +660,13 @@ textarea {
 }
 .img-card-link img{
   width: 100%;
-  border-radius: 5px;
+  border-radius: 1rem;
+  object-fit: cover;
+
 }
-.img-card-link h2{
-  padding: 1rem 0;
-}
+
 .img-card-link:hover{
   box-shadow: 3px 4px 6px rgb(51, 50, 50);
-  background-color: #757575;
 }
 
 @media screen and (max-width: 769px) {

@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/47ab2ddb0f.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -16,6 +20,7 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -23,10 +28,80 @@
     <title>VVS Expressen Region Syd AB</title>
   </head>
   <body>
-    <nav>
+    <div class="header">
       <div class="logo">
         <img src="./images/vvs logo.png" alt="" />
       </div>
+      <div class="icons">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-map-pin"
+        >
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <p>Mullbärgsgatan 3<br>212 29 Malmö</p>
+      </div>
+      <div class="icons">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-phone"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+          ></path>
+        </svg>
+        <p>+46760093224</p>
+      </div>
+      <div class="icons">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-mail"
+        >
+          <path
+            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+          ></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <p>piotr@vvsexpressen.se</p>
+      </div>
+      <div class="cert-container">
+        <div class="cert-card">
+          <img src="./images/BKR_Dekal_BV_250px.png" />
+        </div>
+        <div class="cert-card">
+          <img src="./images/Logotyp aukt.png" />
+        </div>
+      </div>
+    </div>
+    <nav>
+      <!-- <div class="logo">
+        <img src="./images/vvs logo.png" alt="" />
+      </div> -->
       <ul class="nav-links">
         <li><a href="#">HEM</a></li>
         <li><a href="#about">OM OSS</a></li>
@@ -91,8 +166,8 @@
           <h2>Om Företaget</h2>
           <p>
             <span>VVSExpressen Region Syd AB</span> med sitt säte i Malmö och
-            större delen av Skåne som sitt arbetsområde är ett Bygg och VS företag som
-            utför tjänster inom Bygg-, Värme-, Vatten- och Sanitet.
+            större delen av Skåne som sitt arbetsområde är ett Bygg och VS
+            företag som utför tjänster inom Bygg-, Värme-, Vatten- och Sanitet.
             <!-- <span>VVSExpressen Region Syd AB</span> besitter mångårig erfarenhet
             inom samtliga tjänsteområden vi erbjuder våra kunder. Sedan starten
             2006 har vi växt till fyra skickliga medarbetare som brinner för att
@@ -128,9 +203,9 @@
             VVS Expressen Region Syd AB erbjuder att utföra sina tjänster under
             olika former, både som servicearbeten och som entreprenader i alla
             typer allt efter beställarens förutsättningar. VVS Expressen Region
-            Syd AB är ett BYGG och VVS-Installationsföretag som är auktoriserad av
-            ”SäkerVatten” och medlem i en bransch- och arbetsgivarorganisation
-            "VVS Företagen".
+            Syd AB är ett BYGG och VVS-Installationsföretag som är auktoriserad
+            av ”SäkerVatten” och medlem i en bransch- och
+            arbetsgivarorganisation "VVS Företagen".
           </p>
         </div>
         <div class="box">
@@ -141,10 +216,11 @@
           />
           <h2>Arbetsområde</h2>
           <p class="service-txt">
-            Nybygge tillbyggnad eller renoverngar, allt inom bygg. Stambyte montage av kulvertledningar installation av avlopp-,
-            tappvatten- och värmeledningar spolning/filmning av avloppsledningar
-            injustering av VVC (VarmVattenCirkulation) och värmeinstallationer
-            projektering relining pannbyte servicearbete.
+            Nybygge tillbyggnad eller renoverngar, allt inom bygg. Stambyte
+            montage av kulvertledningar installation av avlopp-, tappvatten- och
+            värmeledningar spolning/filmning av avloppsledningar injustering av
+            VVC (VarmVattenCirkulation) och värmeinstallationer projektering
+            relining pannbyte servicearbete.
           </p>
         </div>
         <div class="box">
@@ -172,7 +248,7 @@
           <h2>Bygg.</h2>
           <p>Klicka på bilden för att komma till bildgalleri</p>
           <a href="project.html">
-            <div>
+            <div class="image-card-container">
               <img src="./images/1.jpg" alt="" />
             </div>
           </a>
@@ -181,7 +257,7 @@
           <h2>VVS.</h2>
           <p>Klicka på bilden för att komma till bildgalleri</p>
           <a href="vvs.html">
-            <div>
+            <div class="image-card-container">
               <img src="./images/2.jpg" alt="" />
             </div>
           </a>
@@ -190,12 +266,14 @@
           <h2>Badrum.</h2>
           <p>Klicka på bilden för att komma till bildgalleri</p>
           <a href="bath.html">
-            <div>
-              <img src="./images/img-wilhelmj-57-master-bathroom-2197.jpg" alt="" />
+            <div class="image-card-container">
+              <img
+                src="./images/img-wilhelmj-57-master-bathroom-2197.jpg"
+                alt=""
+              />
             </div>
           </a>
         </div>
-       
       </div>
       <!-- <div class="img-container">
         <div class="img-card"><img src="./images/4.jpg" alt="" /></div>
@@ -253,7 +331,7 @@
     <footer>
       <div class="cert-container">
         <img src="./images/Logotyp aukt vvs staende.jpg" alt="" />
-        KC
+        <img src="./images/BKR_Dekal_BV_250px.png" alt="" />
       </div>
       <div>
         <ul>
