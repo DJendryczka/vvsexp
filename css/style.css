@@ -280,9 +280,18 @@ nav a {
   background-color: #8d8d8d;
   background-image: url("../images/img-wilhelmj-33-master-bathroom-2168-HDR-2.jpg");
   background-position: center, center;
-  background-size: cover;
+  background-size: 150% 150%;
   background-attachment: fixed;
   background-blend-mode: multiply;
+  animation: shrink 13s infinite alternate;
+}
+@keyframes shrink {
+  0% {
+    background-size: 150% 150%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
 }
 
 .tittle-text {
@@ -294,6 +303,12 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+@media screen and (max-width: 769px){
+  .splash{
+    background-size: cover;
+    animation: none;
+  }
 }
 
 /*===================
